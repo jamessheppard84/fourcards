@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: hsl(229, 6%, 66%)
+    background-color: hsl(0, 0%, 98%);
     display: flex;
     justify-content: center;
     font-family:'Poppins', sans-serif;;
@@ -10,9 +10,9 @@ body {
 }
 
 .page {
-    width: 100%;
+    width: 960px;
     height: 100vh;
-    background: hsl(229, 6%, 66%)
+    background: hsl(0, 0%, 98%);
     display: flex;
     flex-direction: column;
 }
@@ -26,6 +26,11 @@ body {
 
 .header h1 {
     font-weight: 200;
+    margin: 40px 0 0 0;
+}
+
+.header h2 {
+    margin-top: 0; 
 }
 
 .card-container {
@@ -35,14 +40,19 @@ body {
 }
 
 .card {
-    width: 250px;
+    flex: 1;
     height: 180px;
     background: hsl(0, 0%, 98%);
-    margin: 12px;
     border-radius: 3px;
     box-shadow: 0 4px 8px 0 rgba(149, 170, 190, 0.377), 0 6px 15px 0 rgba(144, 175, 185, 0.281);
     display: flex;
     flex-direction: column;
+    padding: 10px;
+}
+
+.middle-cards {
+    flex: 1;
+    margin: 20px;
 }
 
 .card h4 {
@@ -51,11 +61,14 @@ body {
     margin-bottom: 0;
 }
 
-
 .card p {
     font-size: 11px;
     margin-left: 15px;
+}
 
+.card .icon {
+    width: 35px;
+    height: 35px;
 }
 
 .cyan-card {
@@ -63,9 +76,11 @@ body {
 }
 .red-card {
     border-top: 3px solid hsl(0, 78%, 62%);
+
 }
 .orange-card {
     border-top: 3px solid hsl(34, 97%, 64%);
+    margin-top: 20px;
 }
 .blue-card {
     border-top: 3px solid hsl(212, 86%, 64%);
